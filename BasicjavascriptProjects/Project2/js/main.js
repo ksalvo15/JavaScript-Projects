@@ -1,8 +1,8 @@
 
 function myfunction() {
-    var sentence = "i am learning a";
-    sentence += " lot of from this course";
-    document.getElementById("concatenate").innerHTML = sentence;
+    var sentence = "i am learning a"; //creating a concatenate
+    sentence += " lot of from this course"; //creating a concatenate
+    document.getElementById("concatenate").innerHTML = sentence; //when clicked the variable sentence should appear
 }
 
 ///function my_first_function() { //creating the button fuction
