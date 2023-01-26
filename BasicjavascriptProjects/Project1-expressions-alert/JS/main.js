@@ -17,10 +17,10 @@ window.alert(A);
 
 
 
-//function my_first_function() {
-    //var str = "this is the button text!";
-   // document.getElementById("button_text").innerHTML = str; //this is a comment
-//}
+function my_first_function() {
+    var str = "this is the button text!";
+    document.getElementById("button_text").innerHTML = str; //this is a comment
+}
 
 
 var Sent1 = "This is the beginning of the string"; //this ia variable sent1
