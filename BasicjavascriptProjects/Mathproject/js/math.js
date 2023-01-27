@@ -15,12 +15,16 @@ function negative() {
     document.getElementById("neg").innerHTML = -negative;
 }
 
+function x() {
 var x = 5; //this will bring the integer down to the next whole number
 x--;
-document.write(x);
+document.getElementById("x").innerHTML = x;
+}
 
+function y() {
 var y = 5; //this will bring the integer up to the next whole number
 y++;
-document.write(y);
+document.getElementById("y").innerHTML = y;
+}
 
 window.alert(Math.random() * 100); //will give a random number in the 
