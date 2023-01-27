@@ -27,4 +27,8 @@ y++;
 document.getElementById("y").innerHTML = y;
 }
 
-window.alert(Math.random() * 100); //will give a random number in the 
+window.alert(Math.random() * 100); //will give a random number in the
+function random() {
+    
+
+} 
