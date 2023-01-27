@@ -9,3 +9,7 @@ function myfunction() {
    // var str = "this is the button text!";
     //document.getElementById("button_text").innerHTML = str; 
 //}
+function additionfunction() {
+    var addition = 2 +2;
+    document.getElementById("math").innerHTML = "2 +2 = " + addition;
+}
