@@ -17,10 +17,10 @@ function negative() {
 
 var x = 5; //this will bring the integer down to the next whole number
 x--;
-document.write(x );
+document.write(x);
 
-var x = 5; //this will bring the integer up to the next whole number
-x++;
-document.write( x);
+var y = 5; //this will bring the integer up to the next whole number
+y++;
+document.write(y);
 
 window.alert(Math.random() * 100); //will give a random number in the 
