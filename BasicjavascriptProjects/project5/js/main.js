@@ -13,6 +13,13 @@ document.write(typeof 3); //this is a type of operator
 function not() {
    document.getElementById("not").innerHTML =!(5<10); //this will be false because 5 is smaller than 10 but it is a not function
 }
+
+function ridefunction() {
+   var height, can_ride;
+   height = document.getElementById("height").value;
+   can_ride = (height < 52) ? "you are too short":"you are tall enough";
+   document.getElementById("ride").innerHTML = can_ride + " to ride.";
+}
 //function myfunction() {
     
    // document.getElementById("test").innerHTML = isNaN('this is a string');
@@ -33,3 +40,4 @@ function not() {
 //}
 //console.log(2+2);
 //console.log(10>12);
+
