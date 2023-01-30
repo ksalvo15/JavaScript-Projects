@@ -10,9 +10,9 @@ document.write(10+"string"); //this is combining a string and a number
 document.write("<br>");
 document.write(typeof 3); //this is a type of operator
 
-//function not() {
-   //document.getElementById("not").innerHTML =!(5<10);
-//}
+function not() {
+   document.getElementById("not").innerHTML =!(5<10); //this will be false because 5 is smaller than 10 but it is a not function
+}
 //function myfunction() {
     
    // document.getElementById("test").innerHTML = isNaN('this is a string');
