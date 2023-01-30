@@ -2,11 +2,9 @@ document.write(10==10); //we are checking for equality is 10 equal to 10
 document.write("<br>");
 document.write("word"==="string"); //this is checking to see if the data on each side of the equation is equal to each other
 document.write("<br>");
-document.write(10=10 && 10>4);
+document.write(10>10 && 10>4);//this will be false because both need to be true because of and
 document.write("<br>");
-document.write(10=10 || 10>4);
-document.write("<br>");
-document.write(10+"string");
+document.write(10==10 || 10<4); //this will be true because only one needs to be true because of or
 document.write("<br>");
 document.write(10+"string"); //this is combining a string and a number
 document.write("<br>");
