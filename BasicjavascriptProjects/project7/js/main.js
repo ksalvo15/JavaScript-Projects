@@ -6,7 +6,7 @@ function addnumbers1() {
     document.write(20 + x +"<br>");
 }
 function addnumbers2() {
-    
+    var y = 20; //local variable
     document.write(x + y + 10 +"<br>");
 }
 function addnumbers3() {
