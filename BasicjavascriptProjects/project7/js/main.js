@@ -1,8 +1,4 @@
 
-
-if (1<2) {
-    document.write("the left number is smaller thant the right");
-}
 function getdate() {
     var time = new Date().getHours();
     var saying;
@@ -30,7 +26,7 @@ var x=10; //global variable
 var y = 20; //local variable
 
 function addnumbers1() {
-    document.write(20 + x +"<br>");
+    document.write("<br>"+20 + x +"<br>");
 }
 function addnumbers2() {
     
