@@ -1,4 +1,22 @@
 
+var x=10; //global variable
+var y = 20; //local variable
+
+function addnumbers1() {
+    document.write(20 + x +"<br>");
+}
+function addnumbers2() {
+    
+    document.write(x + y + 10 +"<br>");
+}
+function addnumbers3() {
+    console.log(x + y + 100 +"<br>"); //debug to se why the local variable y is not showing up
+}
+
+addnumbers1();
+addnumbers2();
+addnumbers3();
+
 function getdate() {
     var time = new Date().getHours();
     var saying;
@@ -21,21 +39,3 @@ function agefunction() {
     }
     document.getElementById("howold?").innerHTML = vote;
 }
-
-var x=10; //global variable
-var y = 20; //local variable
-
-function addnumbers1() {
-    document.write("<br>"+20 + x +"<br>");
-}
-function addnumbers2() {
-    
-    document.write(x + y + 10 +"<br>");
-}
-function addnumbers3() {
-    console.log(x + y + 100 +"<br>"); //debug to se why the local variable y is not showing up
-}
-
-addnumbers1();
-addnumbers2();
-addnumbers3();
