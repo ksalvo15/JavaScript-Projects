@@ -1,0 +1,22 @@
+
+.container {
+    border: 2px solid black;
+    width: 50%;
+    padding: 15px;
+    background-color: rgb(186, 131, 236);
+}
+/*css for form*/
+input{
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+}
+input[type=submit] {
+    background-color: aquamarine;
+    color: black;
+    padding: 12px 12px;
+    width: 150px;
+}
+
