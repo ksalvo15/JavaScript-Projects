@@ -6,9 +6,9 @@ function placeXorO(squarenumber) {  //function for placing X or O
         let select = document.getElementById(squarenumber); //this retrieves the html id that was clicked
 
         if (activeplayer === 'X') { //this checks whose turn it is
-            select.style.backgroundImage = 'url("images/x.png")'; //will place the x image in the clicked square
+            select.style.backgroundImage = 'url("images/x.jpg")'; //will place the x image in the clicked square
         } else {
-            select.style.backgroundImage = "url('images/o.png')"; //computer will place the o image in the square
+            select.style.backgroundImage = "url('images/o.jpg')"; //computer will place the o image in the square
         }
         selectedsquares.push(squarenumber + activeplayer);
         checkwinconditions(); //checks for win conditions
@@ -69,8 +69,8 @@ function checkwinconditions() { //this will check the square array to search for
 }
 
 function disableclick() { //makes body element temp unclickable
-    body.style.pointerevents = 'none';
-    setTimeout(function() {body.style.pointerevents = 'auto';}, 1000);//makes clickable after 1 sec
+    body.style.pointerEvents = 'none';
+    setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);//makes clickable after 1 sec
 }
 
 function audio(audioURL) { //this takes a string parameter of the path set earlier for placement sound
@@ -86,26 +86,26 @@ function drawwinline(coordX1, coordY1, coordX2, coordY2) { //this will draw the 
     y1 = coordY1,//where start of y axis is
     x2 = coordX2,//where end of x axis is
     y2 = coordY2,//where end of y axis is
-    x= x1, //will store temp x axis data in animation loop
-    y=y1; //will store temp y axis data in animation loop
+    x = x1, //will store temp x axis data in animation loop
+    y = y1; //will store temp y axis data in animation loop
     function animatelinedrawing() { //function to interact and draw a line in the canvas
             const animationloop = requestAnimationFrame(animatelinedrawing); //creates a loop
             c.clearRect(0, 0, 608, 608); //clears content from last loop iteration
             c.beginPath(); //starts a new path
             c.moveTo(x1, y1); //move to starting point
-            c.lineTo(x,y); //moves to ending point
+            c.lineTo(x, y); //moves to ending point
             c.lineWidth=10; //sets the width of the line
             c.strokeStyle = 'rgba(70, 255, 33, .8)'; //sets the color
             c.stroke(); //draws what we laid out
             if (x1 <= x2 && y1 <=y2) { //checks if we have reached the end point
                 if (x <x2) {x +=10;} //adds 10 to previous end x
                 if (y <y2) {y +=10;}//adds 10 to previous end y
-                if (x1 >= x2 && y1 >=y2) { cancelAnimationFrame(animationloop);} //nessesary for 6,4,2 win conditions
+                if (x >= x2 && y >=y2) { cancelAnimationFrame(animationloop);} //nessesary for 6,4,2 win conditions
             }
             if (x1 <= x2 && y1 >=y2) {
                 if (x <x2) {x +=10;}
                 if (y >y2) {y -=10;}
-                if (x1 >= x2 && y1 <=y2) { cancelAnimationFrame(animationloop);}
+                if (x >= x2 && y <=y2) { cancelAnimationFrame(animationloop);}
             }
         }
         function clear() { //clears canvas after win line is drawn 
