@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <h1>what is your favorite color?</h1>
+        <h3>pick your favorite color from this list:</h3>
+            <ul>
+                <li>red</li>
+                <li>yellow</li>
+                <li>blue</li>
+                <li>green</li>
+                <li>purple</li>
+            </ul>
+        <h3>enter your choice below</h3>
+        <input id="colorinput" type="text">
+        <button onclick="colorfunction()">submit color</button>
+        <p id="output"></p>
+
+        <h1 class="click">this text will change</h1>
+        <h3 class="click">this text will not change</h3>
+        <button onclick="myfunction()">changing text</button>
+        <br>
+        <br>
+        <canvas id="mycanvas" width="500" height="250" style="border: 5px solid black;"></canvas>
+            <br>
+            <br>
+        <h1>Characters</h1>
+
+        <ul>
+            <li onclick="displaytype(this)" id="dc" data-character-type="batman">DC</li>
+            <li onclick="displaytype(this)" id="marvel" data-character-type="thor">Marvel</li>
+            <li onclick="displaytype(this)" id="startrek" data-character-type="picard">Star Trek</li>
+        </ul>
+            <br>
+            <br>
+        <div class="container">
+            <h2>HTML Forms</h2>
+                <form name="myform" action="/action_page.php" onsubmit="return validateform()" method="post">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John">
+                <br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                </form> 
+        </div>
+
+
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
