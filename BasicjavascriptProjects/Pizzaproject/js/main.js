@@ -52,7 +52,7 @@ function gettopping(runningtotal,text1) {
             text1 = text1+toppingarray[j].value+"<br>";
         }
     }
-    var toppingcount = selectedtopping.length;
+    var toppingcount = selectedtopping.length; //this counts the toppings and gives a free one
     if (toppingcount > 1) {
         toppingtotal = (toppingcount -1);
     } else {
