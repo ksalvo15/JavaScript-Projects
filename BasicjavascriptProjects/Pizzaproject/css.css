@@ -1,0 +1,83 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(138, 25, 25);
+}
+
+div {
+    color: rgb(65, 7, 121);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#menuBG {
+    width: 600px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalprice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.center {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#showtext {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: left;
+}
+
+#cart {
+    width: 400px;
+    height: 200px;
+    top: 0;
+    margin: 0px auto
+}
+
+#btnorder{
+    
+    width: 100px;
+    height: 40px;
+    margin: 10px 0px 10px 100px;
+    margin: 25px auto;
+    margin-left: 260px;
+    
+    
+}
