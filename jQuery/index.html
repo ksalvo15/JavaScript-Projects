@@ -26,14 +26,14 @@
                     </div>\
                 </body>"
             );
-            $( "p" ).click(function() {
+            $( "p" ).click(function() { //if you click any paragraph in the console log it will show display the following text
             console.log( "You clicked a paragraph!" );
         });
-            $("#2").css({"color":"red"});
-            $("#3").click(function() {
+            $("#2").css({"color":"red"}); //this changes the second paragraph to red
+            $("#3").click(function() { //if the 3rd paragraph is clicked the header will hide slowly
                 $("h1").hide("slow");
             });
-            $("#1").click(function() {
+            $("#1").click(function() { //this function will show the paragraph that was hidden
                 $("h1").show("slow");
             });
            });
