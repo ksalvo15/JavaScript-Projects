@@ -10,7 +10,7 @@ My Javascript repository
 This project is a pizza complany website where you can order a pizza and add toppings. it takes all the input and calculates a price
 
 # Tic Tac Toe
-This is a tic tac toe game where you play the computer
+This is a tic tac toe game where you play the computer. I used Javascript to program the computer to make random choices to place an x or an o on it's turn
 
 # Calculator
 This is a basic calculator 
